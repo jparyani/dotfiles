@@ -1,9 +1,3 @@
 alias emacs="emacs -nw"
-alias updatelibrary='/usr/bin/xbmc-send -a "UpdateLibrary(video)"'
-alias cleanlibrary='/usr/bin/xbmc-send -a "CleanLibrary(video)"'
-alias restartxbmc='sudo service xbmc-live restart'
 alias build-cython='python setup.py build_ext --inplace'
-alias activate-cython='. ~/virtualenvs/testCython/bin/activate'
-alias activate-cython2='. ~/virtualenvs/testCython2/bin/activate'
-alias activate-cython3='. ~/virtualenvs/testCython3/bin/activate'
-
+alias l="ls -alh"
