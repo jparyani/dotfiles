@@ -34,6 +34,12 @@ plugins=(git fabric pip python)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:.
+
+export EDITOR='emacs -nw'
 
 source ~/.aliases
+
+# Python stuff
+export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+source virtualenvwrapper.sh 

@@ -1,0 +1,14 @@
+Pygments
+wsgiref
+ipython
+ipdb
+numpy
+six
+python-dateutil
+pytz
+pyzmq
+#matplotlib
+sphinx
+pyflakes
+pep8
+rope

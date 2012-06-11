@@ -1,0 +1,19 @@
+2012-06-10 18:12:05,884 DEBUG virtualenvwrapper.hook_loader Running initialize hooks
+2012-06-10 18:12:05,886 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/initialize
+2012-06-10 18:12:05,887 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/premkvirtualenv
+2012-06-10 18:12:05,887 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/prermvirtualenv
+2012-06-10 18:12:05,888 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/postrmvirtualenv
+2012-06-10 18:12:05,888 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/predeactivate
+2012-06-10 18:12:05,888 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/postdeactivate
+2012-06-10 18:12:05,889 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/preactivate
+2012-06-10 18:12:05,889 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/postactivate
+2012-06-10 18:12:05,889 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/get_env_details
+2012-06-10 18:12:05,890 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/premkproject
+2012-06-10 18:12:05,890 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/postmkproject
+2012-06-10 18:12:05,890 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/prermproject
+2012-06-10 18:12:05,891 INFO virtualenvwrapper.user_scripts creating /home/jason/.virtualenvs/postrmproject
+2012-06-10 18:12:05,894 DEBUG virtualenvwrapper.hook_loader Saving sourcable initialize hooks to /tmp/virtualenvwrapper-initialize-hook-temOsXYGn7
+2012-06-10 18:14:38,690 DEBUG virtualenvwrapper.hook_loader Running initialize hooks
+2012-06-10 18:14:38,696 DEBUG virtualenvwrapper.hook_loader Saving sourcable initialize hooks to /tmp/virtualenvwrapper-initialize-hook-WVFnJ7WFvI
+2012-06-10 18:15:58,292 DEBUG virtualenvwrapper.hook_loader Running initialize hooks
+2012-06-10 18:15:58,298 DEBUG virtualenvwrapper.hook_loader Saving sourcable initialize hooks to /tmp/virtualenvwrapper-initialize-hook-VCOVLiygHX
