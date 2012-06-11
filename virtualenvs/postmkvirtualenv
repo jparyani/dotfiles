@@ -19,7 +19,7 @@ done
 pip install numpy
 pip install cython
 pip install numexpr
-pip install -r /home/jason/requirements.txt
+pip install -r $WORKON_HOME/postmkvirtualenv.requirements.txt
 pip install matplotlib
 pip install pandas
 pip install pytables h5py
