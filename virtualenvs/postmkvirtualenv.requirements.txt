@@ -6,7 +6,6 @@ numpy
 six
 python-dateutil
 pytz
-pyzmq
 #matplotlib
 sphinx
 pyflakes

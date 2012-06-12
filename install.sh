@@ -7,14 +7,14 @@ install_file() {
   target="$HOME/.$name"
   if [ -e "$target" ]; then
     if [ -d "$target" ]; then 
-      for name in *; do
-        install_file($name)
+      for name in $name/*; do
+        install_file $name
       done
     else
 	    if [ ! -L "$target" ]; then
 	      cutline=`grep -n -m1 "$cutstring" "$target" | sed "s/:.*//"`
 	      if [ -n "$cutline" ]; then
-		cutline=$((cutline-1))
+	  cutline=$((cutline-1))
 	        echo "Updating $target"
 	        head -n $cutline "$target" > update_tmp
 	        startline=`sed '1!G;h;$!d' "$name" | grep -n -m1 "$cutstring" | sed "s/:.*//"`
@@ -28,19 +28,18 @@ install_file() {
 	        echo "WARNING: $target exists but is not a symlink."
 	      fi
 	    fi
-	  else
-	    if [ "$name" != 'install.sh' ]; then
-	      echo "Creating $target"
-	      if [ -n "$(grep "$cutstring" "$name")" ]; then
-	        cp "$PWD/$name" "$target"
-	      else
-	        ln -s "$PWD/$name" "$target"
-	      fi
-	    fi
 	  fi
+  else
+    if [ "$name" != 'install.sh' ]; then
+      echo "Creating $target"
+      if [ -n "$(grep "$cutstring" "$name")" ]; then
+        cp "$PWD/$name" "$target"
+      else
+        ln -s "$PWD/$name" "$target"
+      fi
+    fi
   fi
 }
-
 for name in *; do
-  install_file($name)
+  install_file $name
 done
