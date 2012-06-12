@@ -44,3 +44,5 @@ source ~/.aliases
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 source virtualenvwrapper.sh 
 
+# probably should verify this before setting it...
+export TERM=screen-256color
