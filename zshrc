@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh configuration.
+B# Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -29,7 +29,7 @@ ZSH_THEME="bunsen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(extract git fabric pip python)
+plugins=(debian extract git fabric pip python)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,3 +46,5 @@ source virtualenvwrapper.sh
 
 # probably should verify this before setting it...
 export TERM=xterm-256color
+
+source ~/.site_specific
