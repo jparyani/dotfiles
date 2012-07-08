@@ -1,4 +1,4 @@
-#!/bin/bash
+B#!/bin/bash
 # This hook is run after a new virtualenv is activated.
 # ~/.virtualenvs/postmkvirtualenv
 
@@ -22,4 +22,4 @@ pip install numexpr
 pip install -r $WORKON_HOME/postmkvirtualenv.requirements.txt
 pip install matplotlib
 pip install pandas
-pip install pytables h5py
+pip install tables h5py
