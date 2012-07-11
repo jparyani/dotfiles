@@ -1,4 +1,4 @@
-B#!/bin/bash
+#!/bin/bash
 # This hook is run after a new virtualenv is activated.
 # ~/.virtualenvs/postmkvirtualenv
 
