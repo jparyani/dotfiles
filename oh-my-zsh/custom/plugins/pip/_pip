@@ -7,7 +7,7 @@ _pip_all() {
   # we cache the list of packages (originally from the macports plugin)
   if (( ! $+piplist )); then
     echo -n " (caching package index...)"
-	piplist=($(/home/jason/bin/list_pypi.py | cut -d ' ' -f 1 | tr '[A-Z]' '[a-z]'))
+	piplist=($(~/.oh-my-zsh/custom/plugins/pip/list_pypi.py | cut -d ' ' -f 1 | tr '[A-Z]' '[a-z]'))
   fi
 }
 
