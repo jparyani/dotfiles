@@ -50,3 +50,4 @@ export TERM=xterm-256color
 source ~/.site_specific
 
 alias sudo='nocorrect sudo'
+eval `dircolors .dircolors`
