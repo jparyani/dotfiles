@@ -51,3 +51,6 @@ source ~/.site_specific
 
 alias sudo='nocorrect sudo'
 eval `dircolors ~/.dircolors`
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
