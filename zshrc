@@ -1,3 +1,5 @@
+source ~/.site_specific
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -46,8 +48,6 @@ source virtualenvwrapper.sh
 
 # probably should verify this before setting it...
 export TERM=xterm-256color
-
-source ~/.site_specific
 
 alias sudo='nocorrect sudo'
 eval `dircolors ~/.dircolors`
