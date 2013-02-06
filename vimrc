@@ -71,11 +71,21 @@ set directory=/tmp " Keep swap files in one location
 set timeoutlen=500
 
 set laststatus=2 " Show the status line all the time
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 "set t_Co=256 " Set terminal to 256 colors
 set background=dark
 colorscheme solarized
+
+" *********************************************
+" * Key Bindings *
+" *********************************************
+let mapleader = ","
+
+" File tree browser - backslash
+map \ :NERDTreeToggle<CR>
+" File tree browser showing current file - pipe (shift-backslash)
+map \| :NERDTreeFind<CR>
 
 " *********************************************
 " * Plugin Customization *

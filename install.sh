@@ -6,10 +6,12 @@ install_file() {
   name=$1
   target="$HOME/.$name"
   if [ -e "$target" ]; then
-    if [ -d "$target" ]; then 
-      for name in $name/*; do
-        install_file $name
-      done
+    if [ -d "$target" ]; then
+      if ! [ -L $target ]; then 
+        for name in $name/*; do
+          install_file $name
+        done
+      fi
     else
 	    if [ ! -L "$target" ]; then
 	      cutline=`grep -n -m1 "$cutstring" "$target" | sed "s/:.*//"`
