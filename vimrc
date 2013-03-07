@@ -18,6 +18,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
+Bundle 'kchmck/vim-coffee-script'
 
 " *********************************************
 " * Settings *

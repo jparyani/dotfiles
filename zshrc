@@ -1,4 +1,4 @@
-source ~/.site_specific
+source ~/.site_specific.pre
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -54,3 +54,5 @@ eval `dircolors ~/.dircolors`
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+source ~/.site_specific.post

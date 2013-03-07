@@ -3,7 +3,7 @@ This is a set of scripts for making a nice and dynamic tmux statusbar consisting
 
 The following segments exists for now:
 * LAN & WAN IP addresses.
-* Now Playing for MPD, Spotify (GNU/Linux native or wine, OS X), iTunes (OS X), Rhythmbox, Banshee, MOC, Audacious, Rdio (OS X), cmus and Last.fm (last scrobbled track).
+* Now Playing for MPD, Spotify (GNU/Linux native or wine, OS X), iTunes (OS X), Rhythmbox, Banshee, MOC, Audacious, Rdio (OS X), cmus, Pithos and Last.fm (last scrobbled track).
 * New mail count for GMail, Maildir, mbox and Apple Mail.
 * GNU/Linux and Macintosh OS X battery status (uses [richo/dotfiles/bin/battery](https://github.com/richoH/dotfiles/blob/master/bin/battery)).
 * Weather in Celsius, Fahrenheit and Kelvin using Yahoo Weather.
@@ -62,6 +62,7 @@ Requirements for some segments. You only need to fulfill the requirements for th
 * `mailcount.sh` (gmail): wget.
 * `ifstat.sh`: ifstat (there is a simpler segment not using ifstat but samples /sys/class/net)
 * `tmux_mem_cpu_load.sh`: [tmux-mem-cpu-load](https://github.com/thewtex/tmux-mem-cpu-load)
+* `rainbarf.sh`: [rainbarf](https://github.com/creaktive/rainbarf)
 * `weather.sh`: GNU `grep` with Perl regexp enabled (FreeBSD specific)
 
 ## OS X specific requirements
@@ -166,6 +167,8 @@ You have edited `~/.tmux.conf` but no powerline is displayed. This might be beca
 ```console
 $ tmux source-file ~/.tmux.conf
 ```
+### Multiple lines in bash or no powerline in zsh using iTerm (OS X)
+If your tmux looks like [this](https://github.com/erikw/tmux-powerline/issues/125) then you may have to in iTerm uncheck [Unicode East Asian Ambiguous characters are wide] in Preferences -> Settings -> Advanced.
 
 # Hacking
 
