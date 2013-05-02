@@ -19,6 +19,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade.git'
 
 " *********************************************
 " * Settings *
@@ -96,4 +97,6 @@ map \| :NERDTreeFind<CR>
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " for Linux/MacOSX
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
+" coffeescript
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
