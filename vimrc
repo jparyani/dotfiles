@@ -20,6 +20,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade.git'
+Bundle 'rking/ag.vim'
 
 " *********************************************
 " * Settings *
@@ -99,4 +100,22 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " coffeescript
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" git grep
+func GitGrep(...)
+  let save = &grepprg
+  set grepprg=git\ grep\ -n\ $*
+  let s = 'grep'
+  for i in a:000
+    let s = s . ' ' . i
+  endfor
+  exe s
+  let &grepprg = save
+endfun
+command -nargs=? G call GitGrep(<f-args>)
+func GitGrepWord()
+  normal! "zyiw
+  call GitGrep('-w -e ', getreg('z'))
+endf
+nmap <C-x>G :call GitGrepWord()<CR>
 
