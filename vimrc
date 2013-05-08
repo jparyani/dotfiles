@@ -90,6 +90,12 @@ map \ :NERDTreeToggle<CR>
 " File tree browser showing current file - pipe (shift-backslash)
 map \| :NERDTreeFind<CR>
 
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" Auto save on ESC
+"inoremap <Esc> <Esc>:w<CR>
+
 " *********************************************
 " * Plugin Customization *
 " *********************************************
@@ -119,3 +125,5 @@ func GitGrepWord()
 endf
 nmap <C-x>G :call GitGrepWord()<CR>
 
+" powerline
+let g:Powerline_symbols = 'fancy'
