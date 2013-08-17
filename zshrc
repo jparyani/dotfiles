@@ -31,7 +31,7 @@ ZSH_THEME="bunsen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew cake coffee command-not-found docker debian extract git fabric node npm pip osx python history-substring-search sublime)
+plugins=(brew cake coffee command-not-found docker debian extract git fabric node npm pip osx python history-substring-search sublime vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
