@@ -48,3 +48,15 @@ run_virtualenvwrapper:
       - cmd: run_virtualenvwrapper
     - cwd: /home/jason/dotfiles
     - user: jason
+
+/home/jason/.site_specific.pre:
+  file.managed:
+    - user: jason
+    - group: jason
+    - mode: '0600'
+
+/home/jason/.site_specific.post:
+  file.managed:
+    - user: jason
+    - group: jason
+    - mode: '0600'
