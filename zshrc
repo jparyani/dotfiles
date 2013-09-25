@@ -1,5 +1,7 @@
 source ~/.site_specific.pre
 
+export PATH=$PATH:~/.bin
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -51,9 +53,6 @@ export TERM=xterm-256color
 
 alias sudo='nocorrect sudo'
 eval `dircolors ~/.dircolors`
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 source ~/.site_specific.post
 
