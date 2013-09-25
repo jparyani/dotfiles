@@ -1,0 +1,4 @@
+user: jason
+file_roots:
+  base:
+    - /Users/jason/.salt_config
