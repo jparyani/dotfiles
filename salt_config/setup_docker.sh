@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get install wget git
+apt-get install -y -qq wget git
 
 mkdir -p /srv
 cd /srv
