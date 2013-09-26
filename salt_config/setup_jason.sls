@@ -33,7 +33,7 @@ virtualenvwrapper:
 
 run_virtualenvwrapper:
   cmd.wait:
-    - name: 'virtualenvwrapper.sh'
+    - name: 'bash virtualenvwrapper.sh'
     - watch:
       - pip: virtualenvwrapper
 
