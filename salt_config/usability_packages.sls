@@ -10,4 +10,3 @@ all:
       - git
       - wget
       - curl
-      - ca-certificates
