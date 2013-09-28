@@ -10,3 +10,5 @@ all:
       - git
       - wget
       - curl
+      - vim
+      - sudo
