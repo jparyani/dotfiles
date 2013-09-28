@@ -1,3 +1,3 @@
 alias emacs="emacs -nw"
 alias build-cython='python setup.py build_ext --inplace'
-alias l="\ls -Alh"
+alias l="ls -Alh"
