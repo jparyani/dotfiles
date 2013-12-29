@@ -2,7 +2,7 @@ base:
   mars*:
     - osx
 
-  'os:Ubuntu':
+  'os_family:Debian':
     - match: grain
     - usability_packages
     - setup_jason

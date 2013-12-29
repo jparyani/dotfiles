@@ -1,6 +1,6 @@
 #!/bin/sh
 apt-get update
-apt-get install -y -qq wget git sudo python-software-properties
+apt-get install -y -qq wget git sudo python-software-properties procps software-properties-common
 
 mkdir -p /srv
 cd /srv
