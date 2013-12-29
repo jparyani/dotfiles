@@ -48,6 +48,8 @@ source ~/.aliases
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 source virtualenvwrapper.sh 
 
+export GOPATH=~/.go
+
 # probably should verify this before setting it...
 export TERM=xterm-256color
 
