@@ -63,8 +63,9 @@ set history=1000 " Store lots of :cmdline history
 set scrolloff=3
 set sidescrolloff=7
 
-set mouse-=a
-set mousehide
+set mouse=a
+set clipboard=unnamed
+"set mousehide
 set ttymouse=xterm2
 set sidescroll=1
 
