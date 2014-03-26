@@ -72,8 +72,12 @@ bindkey '^T' autosuggest-toggle
 export AUTOSUGGESTION_HIGHLIGHT_CURSOR=0
 export AUTOSUGGESTION_HIGHLIGHT_COLOR=fg=0
 
-source ~/.site_specific.post
-
 # Temporary fix for broken hotkeys
 bindkey '\eOA' history-substring-search-up
 bindkey '\eOB' history-substring-search-down
+
+# Colorize less
+export LESS='-R'
+export LESSOPEN='|~/.bin/lessfilter %s'
+
+source ~/.site_specific.post
