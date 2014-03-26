@@ -5,6 +5,7 @@ all:
       - tmux
       - python
       - python-dev
+      - python-pygments
       - ruby
       - ruby-dev
       - git
