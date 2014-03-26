@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git submodule update --init
+
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 install_file() {
