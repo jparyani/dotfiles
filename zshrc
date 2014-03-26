@@ -33,7 +33,7 @@ ZSH_THEME="bunsen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew cake coffee command-not-found docker debian extract git fabric meteor mrt node npm pip osx python history-substring-search sublime vagrant zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(brew cake coffee command-not-found docker debian extract git fabric meteor mrt node npm pip osx python history-substring-search sublime vagrant zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,6 +55,9 @@ export TERM=xterm-256color
 
 alias sudo='nocorrect sudo'
 eval `dircolors ~/.dircolors`
+
+# Setup zsh-autosuggestions
+source $ZSH/custom/plugins/zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
 zle-line-init() {
