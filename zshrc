@@ -69,6 +69,9 @@ zle -N zle-line-init
 # zsh-autosuggestions is designed to be unobtrusive)
 bindkey '^T' autosuggest-toggle
 
+export AUTOSUGGESTION_HIGHLIGHT_CURSOR=0
+export AUTOSUGGESTION_HIGHLIGHT_COLOR=fg=0
+
 source ~/.site_specific.post
 
 # Temporary fix for broken hotkeys
