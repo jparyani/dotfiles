@@ -75,6 +75,8 @@ export AUTOSUGGESTION_HIGHLIGHT_COLOR=fg=0
 # Temporary fix for broken hotkeys
 bindkey '\eOA' history-substring-search-up
 bindkey '\eOB' history-substring-search-down
+bindkey '\e[A' history-substring-search-up
+bindkey '\e[B' history-substring-search-down
 
 # Colorize less
 export LESS='-R'
