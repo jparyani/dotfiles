@@ -60,3 +60,10 @@ run_virtualenvwrapper:
     - user: jason
     - group: jason
     - mode: '0600'
+
+/etc/sudoers.d/group_sudo:
+  file.managed:
+    - source: salt://group_sudo
+    - user: root
+    - group: root
+    - mode: '0644'
