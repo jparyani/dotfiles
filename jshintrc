@@ -1,0 +1,13 @@
+{
+  "globalstrict": true,
+  "globals"   : {
+    "require"   : false,
+    /* MOCHA */
+    "describe"   : true,
+    "it"         : true,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false
+  }
+}
