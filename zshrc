@@ -46,7 +46,7 @@ source ~/.aliases
 
 # Python stuff
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-source virtualenvwrapper.sh 
+source virtualenvwrapper_lazy.sh 
 
 export GOPATH=~/.go
 
