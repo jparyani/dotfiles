@@ -2,6 +2,7 @@
   "node" : true,
   "strict" : false,
   "globalstrict" : true,
+  "quotmark" : "double",
   "globals"   : {
     /* MOCHA */
     "describe"   : true,
