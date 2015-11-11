@@ -46,7 +46,7 @@ source ~/.aliases
 
 # Python stuff
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-source virtualenvwrapper_lazy.sh 
+#source virtualenvwrapper_lazy.sh 
 
 export GOPATH=~/.go
 
@@ -70,7 +70,8 @@ zle -N zle-line-init
 bindkey '^T' autosuggest-toggle
 
 export AUTOSUGGESTION_HIGHLIGHT_CURSOR=0
-export AUTOSUGGESTION_HIGHLIGHT_COLOR=fg=0
+export AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
+export AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=6"
 
 # Temporary fix for broken hotkeys
 bindkey '\eOA' history-substring-search-up
@@ -82,4 +83,5 @@ bindkey '\e[B' history-substring-search-down
 export LESS='-R'
 export LESSOPEN='|~/.bin/lessfilter %s'
 
+alias git-recent="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 source ~/.site_specific.post
