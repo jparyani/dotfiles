@@ -1,3 +1,10 @@
+PROFILE_STARTUP=false
+if [[ "$PROFILE_STARTUP" == true ]]; then
+    # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
+    PS4=$'%D{%M%S%.} %N:%i> '
+    exec 3>&2 2>$HOME/tmp/startlog.$$
+    setopt xtrace prompt_subst
+fi
 source ~/.site_specific.pre
 
 export PATH=~/.bin:$PATH
@@ -9,7 +16,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bunsen"
+ZSH_THEME="avit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,10 +40,8 @@ ZSH_THEME="bunsen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew brew-cask cake coffee command-not-found docker debian extract git fabric meteor mrt node npm pip osx python history-substring-search sublime vagrant zsh-syntax-highlighting)
-
+plugins=(brew brew-cask cake coffee docker debian extract git fabric meteor mrt node npm pip osx python history-substring-search sublime vagrant zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-
 # Customize to your needs...
 #export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:.
 
@@ -46,7 +51,7 @@ source ~/.aliases
 
 # Python stuff
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-#source virtualenvwrapper_lazy.sh 
+#source virtualenvwrapper_lazy.sh
 
 export GOPATH=~/.go
 
@@ -80,8 +85,14 @@ bindkey '\e[A' history-substring-search-up
 bindkey '\e[B' history-substring-search-down
 
 # Colorize less
-export LESS='-R'
-export LESSOPEN='|~/.bin/lessfilter %s'
+#export LESS='-R'
+#export LESSOPEN='|~/.bin/lessfilter %s'
 
-alias git-recent="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
+export SAVEHIST=1000000 
+alias git-recent="git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 source ~/.site_specific.post
+# Entirety of my startup file... then
+if [[ "$PROFILE_STARTUP" == true ]]; then
+    unsetopt xtrace
+    exec 2>&3 3>&-
+fi
