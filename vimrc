@@ -128,3 +128,6 @@ nmap <C-x>G :call GitGrepWord()<CR>
 
 " powerline
 let g:Powerline_symbols = 'fancy'
+
+set modelines=0
+set nomodeline
