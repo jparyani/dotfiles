@@ -40,7 +40,7 @@ ZSH_THEME="avit"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew cake coffee docker debian extract git fabric meteor node npm pip osx python history-substring-search sublime vagrant zsh-syntax-highlighting)
+plugins=(brew cake coffee docker debian extract git fabric meteor node npm pip macos python history-substring-search sublime vagrant zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 #export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:.
@@ -53,7 +53,7 @@ source ~/.aliases
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 #source virtualenvwrapper_lazy.sh
 
-export GOPATH=~/.go
+export GOPATH=~/go
 
 # probably should verify this before setting it...
 export TERM=xterm-256color
@@ -88,7 +88,7 @@ bindkey '\e[B' history-substring-search-down
 #export LESS='-R'
 #export LESSOPEN='|~/.bin/lessfilter %s'
 
-export SAVEHIST=1000000 
+export SAVEHIST=1000000
 alias git-recent="git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 source ~/.site_specific.post
 # Entirety of my startup file... then
